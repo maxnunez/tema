@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your 3 project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vetsoft.com</title>
+
+    <!-- Google Font: DM sans - inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed scroll scroll4">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header header-new navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav" style="align-items: center;">
+            <li class="nav-item menu-flot">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><img src="dist/img/icons/row.svg" alt=""></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <span class="title-content">Clínica</span>
+            </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                    <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-comments"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Brad Diesel
+                                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">Call me whenever you can...</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    John Pierce
+                                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">I got your message bro</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Nora Silvester
+                                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">The subject goes here</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i>
+                    <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-header">15 Notifications</span>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-envelope mr-2"></i> 4 3 messages
+                        <span class="float-right text-muted text-sm">3 mins</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-users mr-2"></i> 8 friend requests
+                        <span class="float-right text-muted text-sm">12 hours</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-file mr-2"></i> 3 3 reports
+                        <span class="float-right text-muted text-sm">2 days</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img src="dist/img/user-image.png" alt="user-image" class="rounded-circle shadow-lg"></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-white elevation-4">
+        <!-- Brand Logo -->
+        <img src="dist/img/logo/logo-uni.svg" alt="AdminLTE Logo" class="brand-image logo-new" style="opacity: .8">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-new nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/home.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Inicio
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/hospital-1.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Clinica
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/cut.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Peluqueria
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/shopping-bag-1.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Petshop
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/clock-1.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Horario
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/task-square.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Tareas
+                                <span class="right badge badge-grey ">3</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/box-1.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Productos
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="dist/img/icons/voz.svg" alt="icono-incio" width="24px">
+                            <p>
+                                Campañas
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="title-content py-3 pl-5">Paciente</h2>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-3 col-sm-12 col-12">
+                        <div class=" pet base-card">
+                            <img src="dist/img/Foto.png" alt="pet" class="pet-image-profile">
+                            <div class="pet-content">
+                                <div class="pet-title">
+                                    <h3 class="format-header">Simba</h3>
+                                    <a href="#">
+                                        <img src="dist/img/icons/edit-2.svg" alt="edit" height="24px">
+                                    </a>
+                                </div>
+                                <p class="inner format-parrafo">10 años y 3 meses</p>
+                                <div class="pet-footer format-base-min">
+                                    <span>Canino</span>
+                                    <span>Golden Retrieve</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7  col-sm-12 col-12">
+                        <div class=" activity base-card base-card__pad-24">
+                            <h3 class="format-header mb-3">Actividad recientes</h3>
+                            <div class="boxing">
+                                <div class="boxing-header">
+                                    <h3 class="format ">Desparasitación</h3>
+                                    <a href="#"><img src="dist/img/icons/puntos.svg" alt="menu" height="35px"></a>
+                                </div>
+                                <div class="boxing-footer">
+                                    <span class="format-date-doctor inner mr-5"><img src="dist/img/icons/calendar-2.svg" alt="calendar"> 1 de junio, 14:10</span>
+                                    <span class="format-date-doctor inner"><img src="dist/img/icons/profile.svg" alt="user">Dr.Pérez</span>
+                                </div>
+                            </div>
+                            <div class="boxing boxing__default">
+                                <div class="boxing-header">
+                                    <h3 class="format ">Peluquería</h3>
+                                    <a href="#"><img src="dist/img/icons/puntos.svg" alt="menu" height="35px"></a>
+                                </div>
+                                <div class="boxing-footer">
+                                    <span class="format-date-doctor inner mr-5"><img src="dist/img/icons/calendar-2.svg" alt="calendar"> 1 de junio, 14:10</span>
+                                    <span class="format-date-doctor inner"><img src="dist/img/icons/profile.svg" alt="user">Dr.Pérez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-pet" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-consulta-tab" data-toggle="tab" data-target="#nav-consulta" type="button" role="tab" aria-controls="nav-consulta" aria-selected="true">Consulta</button>
+                                <button class="nav-link" id="nav-sirugia-tab" data-toggle="tab" data-target="#nav-sirugia" type="button" role="tab" aria-controls="nav-sirugia" aria-selected="false">Sirugia </button>
+                                <button class="nav-link" id="nav-vacunacion-tab" data-toggle="tab" data-target="#nav-vacunacion" type="button" role="tab" aria-controls="nav-vacunacion" aria-selected="false">Vacunación</button>
+                                <button class="nav-link" id="nav-desparacitacion-tab" data-toggle="tab" data-target="#nav-desparacitacion" type="button" role="tab" aria-controls="nav-desparacitacion" aria-selected="false">Desparacitación</button>
+                                <button class="nav-link" id="nav-peluqueria-tab" data-toggle="tab" data-target="#nav-peluqueria" type="button" role="tab" aria-controls="nav-peluqueria" aria-selected="false">Peluqueria</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-consulta" role="tabpanel" aria-labelledby="nav-consulta-tab">
+                                <div class="row py-4">
+                                    <div class="col-md-8 col-sm-12 col-12">
+                                        <div class="boxing boxing__default boxing-sin-content-active">
+                                            <div class="boxing-header">
+                                                <h3 class="format ">Consulta</h3>
+                                                <a href="#"><img src="dist/img/icons/puntos.svg" alt="menu" height="35px"></a>
+                                            </div>
+                                            <div class="boxing-footer">
+                                                <span class="format-date-doctor inner mr-5"><img src="dist/img/icons/calendar-2.svg" alt="calendar"> 1 de junio, 14:10</span>
+                                                <span class="format-date-doctor inner"><img src="dist/img/icons/profile.svg" alt="user">Dr.Pérez</span>
+                                            </div>
+                                        </div>
+                                        <div class="boxing boxing__tasck boxing-sin-content-tasck">
+                                            <div class="boxing-header">
+                                                <h3 class="format ">@ Radiografia</h3>
+                                                <a href="#"><img src="dist/img/icons/puntos.svg" alt="menu" height="35px"></a>
+                                            </div>
+                                            <div class="boxing-footer">
+                                                <span class="format-date-doctor inner mr-5"><img src="dist/img/icons/calendar-2.svg" alt="calendar"> 1 de junio, 14:10</span>
+                                                <span class="format-date-doctor inner"><img src="dist/img/icons/profile.svg" alt="user">Dr.Pérez</span>
+                                            </div>
+                                        </div>
+                                        <div class="boxing boxing__tasck boxing-sin-content-tasck">
+                                            <div class="boxing-header">
+                                                <h3 class="format ">@ Radiografia</h3>
+                                                <a href="#"><img src="dist/img/icons/puntos.svg" alt="menu" height="35px"></a>
+                                            </div>
+                                            <div class="boxing-footer">
+                                                <span class="format-date-doctor inner mr-5"><img src="dist/img/icons/calendar-2.svg" alt="calendar"> 1 de junio, 14:10</span>
+                                                <span class="format-date-doctor inner"><img src="dist/img/icons/profile.svg" alt="user">Dr.Pérez</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-sirugia" role="tabpanel" aria-labelledby="nav-sirugia-tab"></div>
+                            <div class="tab-pane fade" id="nav-vacunacion" role="tabpanel" aria-labelledby="nav-vacunacion-tab"></div>
+                            <div class="tab-pane fade" id="nav-desparacitacion" role="tabpanel" aria-labelledby="nav-desparacitacion-tab"></div>
+                            <div class="tab-pane fade" id="nav-peluqueria" role="tabpanel" aria-labelledby="nav-peluqueria-tab"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar  control-sidebar-light ">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h3 class="format-header">Cliente</h3>
+            <div class="client-contac">
+                <div class="client-contac-header">
+                    <img src="dist/img/avatar.png" class="client-contacto-img" alt="user-client" height="64px">
+                    <div class="client-contac-info">
+                        <h3 class="format">Juan Pérez</h3>
+                        <div class="client-contacto-info-avatr">
+                            <img src="dist/img/icons/pet.svg" alt="icon" height="16px" class="mr-2">
+                            <img src="dist/img/Foto.png" alt="avatar-pet" height="32px" >
+                            <img src="dist/img/Foto.png" alt="avatar-pet" height="32px" class="splas-img">
+                            <span>2+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-contac-footer">
+                    <div>
+                        <img src="dist/img/icons/phone.svg" alt="phone" height="24px">
+                        <span>
+              (591) 71345812
+            </span>
+                    </div>
+                    <div>
+                        <img src="dist/img/icons/pin-map.svg" alt="map" height="24px">
+                        <span>
+               Av. San Martin #123
+            </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <!--  <footer class="main-footer">-->
+    <!--  </footer>-->
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+</body>
+</html>
