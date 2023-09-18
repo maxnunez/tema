@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
@@ -30,9 +34,8 @@
     <link rel="stylesheet" href="dist/css/app.css" />
     <link rel="stylesheet" href="dist/css/iconSax.css" />
   </head>
-  <body
-    class="hold-transition sidebar-mini layout-fixed scroll4 control-sidebar-slide-open"
-  >
+  <body class="hold-transition sidebar-mini layout-fixed scroll4">
+    <!-- class open slider "control-sidebar-slide-open" -->
     <div class="wrapper">
       <!-- Navbar -->
       <nav
@@ -46,14 +49,24 @@
             /></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <span class="title-content">Hola, Jonathan</span>
+            <span class="title-content">Horario</span>
           </li>
         </ul>
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Navbar Search -->
-          <li class="nav-item"></li>
+          <li class="nav-item">
+            <div class="search-new">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar..."
+                data-toggle="modal"
+                data-target="#modal-default"
+              />
+            </div>
+          </li>
 
           <!-- Messages Dropdown Menu -->
           <li class="nav-item dropdown">
@@ -199,13 +212,21 @@
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-white elevation-4">
         <!-- Brand Logo -->
-        <img
-          src="dist/img/logo/logo-uni.svg"
-          alt="AdminLTE Logo"
-          class="brand-image logo-new"
-          style="opacity: 0.8"
-        />
 
+        <div class="my-3">
+          <button
+            id="file-logo"
+            class="d-flex flex-column justify-content-center p-3 mx-auto btn-file-logo"
+          >
+            <i
+              class="isax isax-gallery-edit5 mx-auto"
+              style="font-size: 50px"
+            ></i>
+            Inserta tu logo
+          </button>
+
+          <input id="input-logo" type="file" name="logo" hidden />
+        </div>
         <!-- Sidebar -->
         <div class="sidebar">
           <!-- Sidebar Menu -->
@@ -279,214 +300,219 @@
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Main content -->
-        <section class="content">
+        <section class="content py-5">
           <div class="container-fluid px-4">
-            <div class="book-wiget d-flex row pt-5">
-              <div class="book-wiget d-flex row">
-                <a href="#" class="book-wiget-item book-wiget-item--1">
-                  <div>
-                    <h3 class="format text-white mb-0">Alimentos</h3>
-                    <div
-                      class="d-flex justify-content-between align-items-center format text-white"
-                    >
-                      <p class="m-0 format-date-doctor inner f-12 text-primary">
-                        15 Productos
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="book-wiget-item book-wiget-item--2">
-                  <div>
-                    <h3 class="format text-white mb-0">Accesorios</h3>
-                    <div
-                      class="d-flex justify-content-between align-items-center format text-white"
-                    >
-                      <p class="m-0 format-date-doctor inner f-12 text-primary">
-                        15 Productos
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="book-wiget-item book-wiget-item--3">
-                  <div>
-                    <h3 class="format text-white mb-0">Higiene</h3>
-                    <div
-                      class="d-flex justify-content-between align-items-center format text-white"
-                    >
-                      <p class="m-0 format-date-doctor inner f-12 text-primary">
-                        15 Productos
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="book-wiget-item">
-                  <div>
-                    <h3 class="format text-white mb-0">Salud</h3>
-                    <div
-                      class="d-flex justify-content-between align-items-center format text-white"
-                    >
-                      <p class="m-0 format-date-doctor inner f-12 text-primary">
-                        15 Productos
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white px-4 py-2 my-3">
-              <div class="search-new my-2 d-flex w-100">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Buscar..."
-                  data-toggle="modal"
-                  data-target="#modal-default"
-                />
-                <button class="format-label text-griss f-14 btn d-flex">
-                  Filtros <i class="ml-3 isax isax-setting-4"></i>
-                </button>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between">
-              <h2 class="format-header">Alimentos</h2>
-              <div class="d-flex align-items-center">
-                <button
-                  class="btn btn-secondary format text-white d-flex align-items-center mr-5"
-                >
-                  <i class="mr-3 isax isax-scan"></i>
-                  Escáner
-                </button>
-                <div class="d-flex">
-                  <button
-                    class="btn format text-griss d-flex align-items-center f-12"
+            <div class="d-flex align-items-center">
+              <div
+                class="conten-board-check d-flex justify-content-between align-content-center mr-4"
+              >
+                <p class="f-14 inner text-purple">
+                  ¡Aun no comenzaste tu jornada laboral! Ficha tu entrada para
+                  comenzar
+                </p>
+                <div>
+                  <div
+                    class="countraund board-check"
+                    data-progress="0"
+                    style="--progress: 0deg"
                   >
-                    <i class="mr-2 isax isax-element-3"></i>
-                    Board View
-                  </button>
-                  <button
-                    class="btn format text-griss d-flex align-items-center f-12"
-                  >
-                    <i class="mr-2 isax isax-menu-1"></i>
-                    List View
-                  </button>
+                    0%
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="book-wiget-item book-wiget-item--btn book-wiget-item--2"
+              >
+                <div>
+                  <a href="#" class="text-darck-theme">
+                    <i class="isax isax-document-text-14"></i>
+                    <p class="format-header mb-0 text-darck-theme">
+                      Fichar entrada
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="book-wiget-item book-wiget-item--btn book-wiget-item--2"
+              >
+                <div>
+                  <a href="#" class="text-darck-theme">
+                    <i class="isax isax-calendar-edit"></i>
+                    <p class="format-header mb-0 text-darck-theme">
+                      Fichar salida
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-wrap content-product py-4">
-              <div class="content-product-item">
-                <img src="dist/img/comida.png" alt="comida de perro" />
-                <div class="py-2 px-3">
-                  <p class="format-header">
-                    Royal Canin <br />
-                    Puppy Mini
-                  </p>
-
+            <div class="row my-5">
+              <div class="col-12 col-md-6">
+                <div class="fichaje-dia mx-auto">
                   <div class="d-flex justify-content-between">
-                    <span class="format-label text-neutral">$225</span>
-                    <span class="old-price format-label text-griss">$300</span>
+                    <h2 class="format-header">Jornada del día</h2>
+                    <a href="#"
+                      ><p
+                        class="mb-0 text-griss format-label d-flex align-items-center"
+                      >
+                        Ver todas
+                        <i class="ml-3 fa-solid fa-chevron-right"></i></p
+                    ></a>
+                  </div>
+                  <div id="accordion">
+                    <div class="card my-3">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button
+                            class="btn btn-link"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            Collapsible Group Item #1
+                          </button>
+                        </h5>
+                      </div>
+
+                      <div
+                        id="collapseOne"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordion"
+                      >
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high
+                          life accusamus terry richardson ad squid. 3 wolf moon
+                          officia aute, non cupidatat skateboard dolor brunch.
+                          Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                          wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et.
+                          Nihil anim keffiyeh helvetica, craft beer labore wes
+                          anderson cred nesciunt sapiente ea proident. Ad vegan
+                          excepteur butcher vice lomo. Leggings occaecat craft
+                          beer farm-to-table, raw denim aesthetic synth nesciunt
+                          you probably haven't heard of them accusamus labore
+                          sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="content-product-item">
-                <img src="dist/img/comida.png" alt="comida de perro" />
-                <div class="py-2 px-3">
-                  <p class="format-header">
-                    Royal Canin <br />
-                    Puppy Mini
-                  </p>
-
-                  <div class="d-flex justify-content-between">
-                    <span class="format-label text-neutral">$225</span>
-                    <span class="old-price format-label text-griss">$300</span>
-                  </div>
-                </div>
-              </div>
-              <div class="content-product-item">
-                <img src="dist/img/comida.png" alt="comida de perro" />
-                <div class="py-2 px-3">
-                  <p class="format-header">
-                    Royal Canin <br />
-                    Puppy Mini
-                  </p>
-
-                  <div class="d-flex justify-content-between">
-                    <span class="format-label text-neutral">$225</span>
-                    <span class="old-price format-label text-griss">$300</span>
-                  </div>
-                </div>
-              </div>
-              <div class="content-product-item">
-                <img src="dist/img/comida.png" alt="comida de perro" />
-                <div class="py-2 px-3">
-                  <p class="format-header">
-                    Royal Canin <br />
-                    Puppy Mini
-                  </p>
-
-                  <div class="d-flex justify-content-between">
-                    <span class="format-label text-neutral">$225</span>
-                    <span class="old-price format-label text-griss">$300</span>
-                  </div>
-                </div>
-              </div>
-              <div class="content-product-item">
-                <img src="dist/img/comida.png" alt="comida de perro" />
-                <div class="py-2 px-3">
-                  <p class="format-header">
-                    Royal Canin <br />
-                    Puppy Mini
-                  </p>
-
-                  <div class="d-flex justify-content-between">
-                    <span class="format-label text-neutral">$225</span>
-                    <span class="old-price format-label text-griss">$300</span>
-                  </div>
-                </div>
-              </div>
+              <div class="col-12 col-md-6"></div>
             </div>
           </div>
-
           <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
       </div>
-      |
+
       <!-- /.content-wrapper -->
 
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-light">
         <!-- Control sidebar content goes here -->
-        <div class="px-3 py-1">
-          <h3 class="format-header text-center text-dark my-2">Producto</h3>
-          <div class="d-flex flex-column">
-            <img src="dist/img/comida.png" alt="producto" height="250px" />
-            <div class="d-flex flex-column align-items-center mb-2">
-              <h2 class="format text-dark f-24">Royal Canin Puppy Mini</h2>
-              <div>
-                <input type="number" value="1" min="1" max="100" step="1" />
+        <div class="p-3">
+          <h3 class="format-header">Citas del día</h3>
+
+          <div class="search-new my-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar..."
+              data-toggle="modal"
+              data-target="#modal-default"
+            />
+          </div>
+          <div class="card-list-calendar">
+            <img src="cat.png" alt="pasiente" class="card-list-calendar-img" />
+            <div class="card-list-calendar-content">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 formta"><strong>Mila</strong></p>
+                <span class="format-base-min peluqueria">consulta</span>
+                <a href="#"
+                  ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                /></a>
               </div>
+              <span class="d-flex align-items-center"
+                ><i class="text-griss isax isax-clock"></i>
+                <span class="inner format ml-2 text-griss"
+                  >9:30pm - 10:30pm</span
+                >
+              </span>
             </div>
-            <span class="format-label f-14 inner text-primary">Bs. 250</span>
-            <span class="format f-14 my-2">Detalle</span>
-            <span
-              class="format-base-min peluqueria w-25 bg-red-tick text-red-tick inner mb-2"
-              >Stock bajo</span
-            >
-            <p class="inner format-date-doctor text-dark f-14">
-              Alimento para perros cachorros de talla pequeña (hasta 10kg de
-              peso adulto). Hasta los 10 meses de edad.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="f-14 format-label">Vencimiento</span>
-              <span class="f-14 format-label">11/02/2024</span>
+          </div>
+          <div class="card-list-calendar">
+            <img src="cat.png" alt="pasiente" class="card-list-calendar-img" />
+            <div class="card-list-calendar-content">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 formta"><strong>Mila</strong></p>
+                <span class="format-base-min peluqueria">consulta</span>
+                <a href="#"
+                  ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                /></a>
+              </div>
+              <span class="d-flex align-items-center"
+                ><i class="text-griss isax isax-clock"></i>
+                <span class="inner format ml-2 text-griss"
+                  >9:30pm - 10:30pm</span
+                >
+              </span>
             </div>
-            <div class="py-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-primary format w-75 py-2">
-                Añadir al carrito
-              </button>
-              <button class="btn btn-secondary">
-                <i class="isax isax-shopping-cart"></i>
-              </button>
+          </div>
+          <div class="card-list-calendar">
+            <img src="cat.png" alt="pasiente" class="card-list-calendar-img" />
+            <div class="card-list-calendar-content">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 formta"><strong>Mila</strong></p>
+                <span class="format-base-min peluqueria">consulta</span>
+                <a href="#"
+                  ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                /></a>
+              </div>
+              <span class="d-flex align-items-center"
+                ><i class="text-griss isax isax-clock"></i>
+                <span class="inner format ml-2 text-griss"
+                  >9:30pm - 10:30pm</span
+                >
+              </span>
+            </div>
+          </div>
+          <div class="card-list-calendar">
+            <img src="cat.png" alt="pasiente" class="card-list-calendar-img" />
+            <div class="card-list-calendar-content">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 formta"><strong>Mila</strong></p>
+                <span class="format-base-min peluqueria">consulta</span>
+                <a href="#"
+                  ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                /></a>
+              </div>
+              <span class="d-flex align-items-center"
+                ><i class="text-griss isax isax-clock"></i>
+                <span class="inner format ml-2 text-griss"
+                  >9:30pm - 10:30pm</span
+                >
+              </span>
+            </div>
+          </div>
+          <div class="card-list-calendar">
+            <img src="cat.png" alt="pasiente" class="card-list-calendar-img" />
+            <div class="card-list-calendar-content">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 formta"><strong>Mila</strong></p>
+                <span class="format-base-min peluqueria">consulta</span>
+                <a href="#"
+                  ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                /></a>
+              </div>
+              <span class="d-flex align-items-center"
+                ><i class="text-griss isax isax-clock"></i>
+                <span class="inner format ml-2 text-griss"
+                  >9:30pm - 10:30pm</span
+                >
+              </span>
             </div>
           </div>
         </div>
@@ -636,7 +662,7 @@
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="dist/js/spiner.js"></script>
+    <!-- script src="dist/js/jqueti1.9.js"></!-->
 
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
@@ -656,15 +682,18 @@
           pagination: false,
           navigation: false,
           navigationText: ["<", ">"],
-          items: 5,
+          items: 3,
           itemsDesktop: [1080, 4],
           itemsDesktopSmall: [900, 3],
           itemsTablet: [600, 2],
         });
       });
-      $("input[type='number']").InputSpinner({
-        decrementButton: "<i class='fa fa-minus-circle'></i>", // button text
-        incrementButton: "<i class='fa fa-plus-circle'></i>",
+    </script>
+    <script>
+      let inputLogo = document.getElementById("input-logo");
+      let fileLogo = document.getElementById("file-logo");
+      fileLogo.addEventListener("click", function () {
+        inputLogo.click();
       });
     </script>
   </body>

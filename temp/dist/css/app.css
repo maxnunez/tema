@@ -1652,6 +1652,51 @@ div.countraund.text-raund {
 .text-red-tick {
   color: var(--estados-negative, #ff6a55) !important;
 }
+
+.conten-horarios {
+  border-radius: 12px;
+  background: var(--grises-gray-5, #fff);
+  padding: 24px 24px 40px 24px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: ">";
+}
+.btn-secondary-es {
+  border-radius: 24px;
+  border: 1px solid var(--complementarios-violeta-2, #f0efff);
+  background: var(--complementarios-violeta-1, #f8f8ff);
+}
+.btn-secondary-darck {
+  border-radius: 24px;
+  border: 1px solid #7328d6;
+  background: var(--acent-default, #410098);
+}
+.conten-board-check {
+  width: 323px;
+  padding: 32px;
+  border-radius: 12px;
+  background: var(--complementarios-violeta-2, #f0efff);
+}
+
+div.countraund.board-check::after {
+  background: var(--complementarios-violeta-2, #f0efff);
+  margin: 5px;
+}
+div.countraund.board-check {
+  color: var(--secondary-dark, #312e80);
+  background: conic-gradient(#b1adff var(--progress), #b1adff 0deg);
+  width: 84px;
+  height: 84px;
+}
+.fichaje-dia {
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+}
 /*MEDIAS QUERY*/
 @media (max-width: 910px) {
   .search-new {
