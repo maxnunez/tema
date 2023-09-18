@@ -1697,6 +1697,18 @@ div.countraund.board-check {
   border-radius: 12px;
   background: #fff;
 }
+.bg-grey-them {
+  background: #d9d9d9 !important;
+}
+.slider-plomo .slider .slider-selection {
+  background: #48566d;
+}
+.text-gray-card {
+  color: var(--grises-gray-1, #48566d) !important;
+}
+.slider-plomo .slider-track .slider-selection {
+  top: 0 !important;
+}
 /*MEDIAS QUERY*/
 @media (max-width: 910px) {
   .search-new {
