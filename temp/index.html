@@ -1,306 +1,340 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>vetsoft.com</title>
-  <!-- Google Font: DM sans - inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vetsoft.com</title>
+    <!-- Google Font: DM sans - inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
-  />
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"/>
-  <!-- Theme style -->
+    />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
 
-  <link rel="stylesheet" href="dist/css/adminlte.min.css"/>
-  <link
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <link
       rel="stylesheet"
       href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
-  />
-  <link rel="stylesheet" href="dist/css/owl.carousel.css"/>
-  <link rel="stylesheet" href="dist/css/owl.theme.css"/>
-  <link
+    />
+    <link rel="stylesheet" href="dist/css/owl.carousel.css" />
+    <link rel="stylesheet" href="dist/css/owl.theme.css" />
+    <link
       rel="stylesheet"
       href="plugins/bootstrap-slider/css/bootstrap-slider.min.css"
-  />
-  <link rel="stylesheet" href="dist/css/app.css"/>
-  <link rel="stylesheet" href="dist/css/iconSax.css"/>
-</head>
-<body class="hold-transition sidebar-mini layout-fixed scroll4">
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav
-      class="main-header header-new navbar navbar-expand navbar-white navbar-light"
-  >
-    <!-- Left navbar links -->
-    <ul class="navbar-nav" style="align-items: center">
-      <li class="nav-item menu-flot">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"
-        ><img src="dist/img/icons/row.svg" alt=""
-        /></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <span class="title-content">Clínica</span>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <div class="search-new">
-          <input
-              type="text"
-              class="form-control"
-              placeholder="Buscar..."
-              data-toggle="modal"
-              data-target="#modal-default"
-          />
-        </div>
-      </li>
-
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <img src="dist/img/msm.svg" alt="message"/>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img
-                  src="dist/img/user1-128x128.jpg"
-                  alt="User Avatar"
-                  class="img-size-50 mr-3 img-circle"
-              />
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"
-                  ><i class="fas fa-star"></i
-                  ></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted">
-                  <i class="far fa-clock mr-1"></i> 4 Hours Ago
-                </p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img
-                  src="dist/img/user8-128x128.jpg"
-                  alt="User Avatar"
-                  class="img-size-50 img-circle mr-3"
-              />
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"
-                  ><i class="fas fa-star"></i
-                  ></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted">
-                  <i class="far fa-clock mr-1"></i> 4 Hours Ago
-                </p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img
-                  src="dist/img/user3-128x128.jpg"
-                  alt="User Avatar"
-                  class="img-size-50 img-circle mr-3"
-              />
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"
-                  ><i class="fas fa-star"></i
-                  ></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted">
-                  <i class="far fa-clock mr-1"></i> 4 Hours Ago
-                </p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer"
-          >See All Messages</a
-          >
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <img src="dist/img/not.svg" alt="notification"/>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 3 messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 3 reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer"
-          >See All Notifications</a
-          >
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-            class="nav-link"
-            data-widget="control-sidebar"
-            data-slide="true"
-            href="#"
-            role="button"
-        >
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#"
-        ><img
-            src="dist/img/user-image.png"
-            alt="user-image"
-            class="rounded-circle shadow-lg"
-        /></a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-white elevation-4">
-    <!-- Brand Logo -->
-    <img
-        src="dist/img/logo/logo-uni.svg"
-        alt="AdminLTE Logo"
-        class="brand-image logo-new"
-        style="opacity: 0.8"
     />
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/iconSax.css" />
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed scroll4">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav
+        class="main-header header-new navbar navbar-expand navbar-white navbar-light"
+      >
+        <!-- Left navbar links -->
+        <ul class="navbar-nav" style="align-items: center">
+          <li class="nav-item menu-flot">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><img src="dist/img/icons/row.svg" alt=""
+            /></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <span class="title-content">Clínica</span>
+          </li>
+        </ul>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul
-            class="nav nav-new nav-pills nav-sidebar flex-column"
-            data-widget="treeview"
-            role="menu"
-            data-accordion="false"
-        >
-          <!-- Add icons to the links using the .nav-icon class
-           with font-awesome or any other icon font library -->
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
           <li class="nav-item">
-            <a href="#" class="nav-link home-sidebar">
-              <i class="isax isax-home-14"></i>
-              <p>Inicio</p>
+            <div class="search-new">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar..."
+                data-toggle="modal"
+                data-target="#modal-default"
+              />
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <img src="dist/img/msm.svg" alt="message" />
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user1-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 mr-3 img-circle"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user8-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 img-circle mr-3"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user3-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 img-circle mr-3"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Messages</a
+              >
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <img src="dist/img/not.svg" alt="notification" />
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 3 messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 3 reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Notifications</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-hospital"></i>
-              <p>Clinica</p>
+            <a
+              class="nav-link"
+              data-widget="control-sidebar"
+              data-slide="true"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-th-large"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-scissor-1"></i>
-              <p>Peluqueria</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-shopping-bag"></i>
-              <p>Petshop</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-clock"></i>
-              <p>Horario</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-task-square"></i>
-              <p>
-                Tareas
-                <span class="right badge badge-grey">3</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-box"></i>
-              <p>Productos</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="isax isax-volume-high4"></i>
-              <p>Campañas</p>
-            </a>
+            <a href="#"
+              ><img
+                src="dist/img/user-image.png"
+                alt="user-image"
+                class="rounded-circle shadow-lg"
+            /></a>
           </li>
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+      <!-- /.navbar -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid px-4">
-        <div class="book-wiget d-flex row pt-5">
-          <div class="book-wiget-item">
-            <div>
-              <div class="book-wiget-icon mb-2">
-                <i class="isax isax-hospital"></i>
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-white elevation-4">
+        <!-- Brand Logo -->
+        <img
+          src="dist/img/logo/logo-uni.svg"
+          alt="AdminLTE Logo"
+          class="brand-image logo-new"
+          style="opacity: 0.8"
+        />
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-new nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+
+              <li class="nav-item">
+                <a href="#" class="nav-link home-sidebar active">
+                  <i class="isax isax-home-14"></i>
+                  <p>Inicio</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-hospital"></i>
+                  <p>Clinica</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-scissor-1"></i>
+                  <p>Peluqueria</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-shopping-bag"></i>
+                  <p>Petshop</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-clock"></i>
+                  <p>Horario</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-task-square"></i>
+                  <p>
+                    Tareas
+                    <span class="right badge badge-grey">3</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-box"></i>
+                  <p>Productos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="isax isax-volume-high4"></i>
+                  <p>Campañas</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid px-4">
+            <div class="book-wiget d-flex row pt-5">
+              <div class="book-wiget-item">
+                <div>
+                  <div class="book-wiget-icon mb-2">
+                    <i class="isax isax-hospital"></i>
+                  </div>
+                  <a href=""><h3 class="format text-white mb-3">Clínica</h3></a>
+                  <p class="format-label m-0 text-white">
+                    2<span class="format-parrafo text-white"> / 5</span>
+                  </p>
+                  <div class="slider-blue">
+                    <input
+                      type="text"
+                      value=""
+                      class="slider form-control"
+                      data-slider-min="1"
+                      data-slider-max="5"
+                      data-slider-step="5"
+                      data-slider-value="2"
+                      data-slider-orientation="horizontal"
+                      data-slider-selection="before"
+                      data-slider-tooltip="show"
+                    />
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center format text-white"
+                  >
+                    <p class="m-0">Turnos</p>
+                    <span>35%</span>
+                  </div>
+                </div>
               </div>
-              <a href=""><h3 class="format text-white mb-3">Clínica</h3></a>
-              <p class="format-label m-0 text-white">
-                2<span class="format-parrafo text-white"> / 5</span>
-              </p>
-              <div class="slider-blue">
-                <input
+              <div class="book-wiget-item book-wiget-item--1" ">
+              <div>
+                <div class="book-wiget-icon mb-2">
+                  <i class="isax isax-scissor-1"></i>
+                </div>
+                <a href=""
+                  ><h3 class="format text-white mb-3">Peluquería</h3></a
+                >
+                <p class="format-label m-0 text-white">
+                  2<span class="format-parrafo text-white"> / 5</span>
+                </p>
+                <div class="slider-blue slider-blue--1">
+                  <input
                     type="text"
                     value=""
                     class="slider form-control"
@@ -311,706 +345,674 @@
                     data-slider-orientation="horizontal"
                     data-slider-selection="before"
                     data-slider-tooltip="show"
-                />
-              </div>
-              <div
+                  />
+                </div>
+                <div
                   class="d-flex justify-content-between align-items-center format text-white"
-              >
-                <p class="m-0">Turnos</p>
-                <span>35%</span>
-              </div>
-            </div>
-          </div>
-          <div class="book-wiget-item book-wiget-item--1"
-          ">
-          <div>
-            <div class="book-wiget-icon mb-2">
-              <i class="isax isax-scissor-1"></i>
-            </div>
-            <a href=""
-            ><h3 class="format text-white mb-3">Peluquería</h3></a
-            >
-            <p class="format-label m-0 text-white">
-              2<span class="format-parrafo text-white"> / 5</span>
-            </p>
-            <div class="slider-blue slider-blue--1">
-              <input
-                  type="text"
-                  value=""
-                  class="slider form-control"
-                  data-slider-min="1"
-                  data-slider-max="5"
-                  data-slider-step="5"
-                  data-slider-value="2"
-                  data-slider-orientation="horizontal"
-                  data-slider-selection="before"
-                  data-slider-tooltip="show"
-              />
-            </div>
-            <div
-                class="d-flex justify-content-between align-items-center format text-white"
-            >
-              <p class="m-0">Turnos</p>
-              <span>35%</span>
-            </div>
-          </div>
-        </div>
-        <div class="book-wiget-item book-wiget-item--2">
-          <div>
-            <div class="book-wiget-icon mb-2">
-              <i class="isax isax-shopping-bag"></i>
-            </div>
-            <a href=""><h3 class="format text-white mb-3">Petshop</h3></a>
-            <p class="format-label text-white inner">Ventas</p>
-
-            <div
-                class="d-flex justify-content-between align-items-center format text-white"
-            >
-              <p class="m-0">$250K</p>
-              <span>35%</span>
-            </div>
-          </div>
-        </div>
-        <div class="book-wiget-item book-wiget-item--3">
-          <div>
-            <div class="book-wiget-icon mb-2">
-              <i class="isax isax-box"></i>
-            </div>
-            <a href=""><h3 class="format text-white mb-3">Productos</h3></a>
-            <p class="format-label text-white inner">Seguidores</p>
-
-            <div
-                class="d-flex justify-content-between align-items-center format text-white"
-            >
-              <p class="m-0">1435</p>
-              <span>35%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row pt-4">
-        <h3 class="format-header">Citas del día</h3>
-        <div id="owl-demo" class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
                 >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
+                  <p class="m-0">Turnos</p>
+                  <span>35%</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog2.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box-slider">
-              <div class="box-slider-header">
-                <a href="#"
-                ><img src="dist/img/icons/filled.svg" alt="menu-card"
-                /></a>
-                <img src="dist/img/dog.png" alt="client-pet"/>
-                <span class="inner format-parrafo">Peluquería</span>
-              </div>
-              <div class="box-slider-footer">
-                <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h3 class="format-header">Lilo</h3>
-                  <div class="d-flex">
-                    <a href="#">
-                      <img src="dist/img/close-square.png" alt="close"/>
-                    </a>
-                    <a href="#">
-                      <img src="dist/img/tick-square.png" alt="open"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="date-hour">
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-calendar-2"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >Hoy, 13:43 hs</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <i class="isax isax-profile-add4"></i>
-                    <span class="inner format-date-doctor ml-2"
-                    >María García</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-light">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-
-      <div>
-        <div class="book-wiget-item book-wiget-item--1 btn-lateral">
-          <div>
-            <a href="">
+            <div class="book-wiget-item book-wiget-item--2">
               <div>
-                <i class="f-55 text-griss isax isax-dollar-square4"></i>
+                <div class="book-wiget-icon mb-2">
+                  <i class="isax isax-shopping-bag"></i>
+                </div>
+                <a href=""><h3 class="format text-white mb-3">Petshop</h3></a>
+                <p class="format-label text-white inner">Ventas</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center format text-white"
+                >
+                  <p class="m-0">$250K</p>
+                  <span>35%</span>
+                </div>
               </div>
-              <h3 class="format text-white mb-3">Abrir Caja</h3>
-            </a>
+            </div>
+            <div class="book-wiget-item book-wiget-item--3">
+              <div>
+                <div class="book-wiget-icon mb-2">
+                  <i class="isax isax-box"></i>
+                </div>
+                <a href=""><h3 class="format text-white mb-3">Productos</h3></a>
+                <p class="format-label text-white inner">Seguidores</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center format text-white"
+                >
+                  <p class="m-0">1435</p>
+                  <span>35%</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="row pt-4">
+            <h3 class="format-header">Citas del día</h3>
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog2.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-slider">
+                  <div class="box-slider-header">
+                    <a href="#"
+                      ><img src="dist/img/icons/filled.svg" alt="menu-card"
+                    /></a>
+                    <img src="dist/img/dog.png" alt="client-pet" />
+                    <span class="inner format-parrafo">Peluquería</span>
+                  </div>
+                  <div class="box-slider-footer">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2"
+                    >
+                      <h3 class="format-header">Lilo</h3>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="dist/img/close-square.png" alt="close" />
+                        </a>
+                        <a href="#">
+                          <img src="dist/img/tick-square.png" alt="open" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="date-hour">
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-calendar-2"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >Hoy, 13:43 hs</span
+                        >
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="isax isax-profile-add4"></i>
+                        <span class="inner format-date-doctor ml-2"
+                          >María García</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
       </div>
-      <div>
-        calendar
-      </div>
-      <div>
-        <div class="campaign campaign--1 menu-campaign">
+      <!-- /.content-wrapper -->
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-light">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
           <div>
-            <img src="chart.png" alt="grafico" class="campaign-img">
-            <div class="campaign-content">
-              <h2 class="format-header text-white f-22 mt-3">Crea campañas impactantes en minutos.</h2>
-              <p class="format-base-min text-white f-14 inner my-3">Atrae a nuevos clientes y aumenta la visibilidad de
-                tu negocio.</p>
+            <div class="book-wiget-item book-wiget-item--1 btn-lateral">
+              <div>
+                <a href="">
+                  <div>
+                    <i class="f-55 text-griss isax isax-dollar-square4"></i>
+                  </div>
+                  <h3 class="format text-white mb-3">Abrir Caja</h3>
+                </a>
+              </div>
             </div>
-            <div class=" mt-4">
-              <button class="btn btn-campaign d-block w-100 format-label text-darck-theme"> Crear
-                campaña
-              </button>
+          </div>
+          <div>calendar</div>
+          <div>
+            <div class="campaign campaign--1 menu-campaign">
+              <div>
+                <img src="chart.png" alt="grafico" class="campaign-img" />
+                <div class="campaign-content">
+                  <h2 class="format-header text-white f-22 mt-3">
+                    Crea campañas impactantes en minutos.
+                  </h2>
+                  <p class="format-base-min text-white f-14 inner my-3">
+                    Atrae a nuevos clientes y aumenta la visibilidad de tu
+                    negocio.
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <button
+                    class="btn btn-campaign d-block w-100 format-label text-darck-theme"
+                  >
+                    Crear campaña
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </aside>
+      <!-- /.control-sidebar -->
 
+      <!-- Main Footer -->
+      <!--  <footer class="main-footer">-->
+      <!--  </footer>-->
     </div>
-  </aside>
-  <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <!--  <footer class="main-footer">-->
-  <!--  </footer>-->
-</div>
-<!-- ./wrapper -->
-<div
-    class="modal fade modal-new"
-    id="modal-default"
-    style="display: none"
-    aria-hidden="true"
->
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content p-3">
-      <div class="modal-body">
-        <div class="search-new active-search">
-          <input type="text" class="form-control" placeholder="Buscar..."/>
+    <!-- ./wrapper -->
+    <div
+      class="modal fade modal-new"
+      id="modal-default"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3">
+          <div class="modal-body">
+            <div class="search-new active-search">
+              <input type="text" class="form-control" placeholder="Buscar..." />
+            </div>
+            <div class="filters d-flex align-items-center mt-2">
+              <p>Filtros:</p>
+              <ul class="ks-cboxtags">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkboxOne"
+                    value="Pacientes"
+                    checked
+                  /><label for="checkboxOne">Pacientes</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkboxTwo"
+                    value="Clientes"
+                  /><label for="checkboxTwo">Clientes </label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkboxThree"
+                    value="Productos"
+                  /><label for="checkboxThree">Productos</label>
+                </li>
+              </ul>
+            </div>
+            <div class="search-items">
+              <p>Clientes</p>
+              <a href="#" class="d-block my-2">
+                <div class="avatar-search d-flex align-items-center">
+                  <img
+                    src="dist/img/avatar.png"
+                    alt=""
+                    class="rounded"
+                    height="56px"
+                  />
+                  <div class="ml-3">
+                    <h3>Juan Pérez</h3>
+                    <div>
+                      <img src="dist/img/pet.png" alt="pet" />
+                      <span class="ml-1">Simba</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="d-block my-2">
+                <div class="avatar-search d-flex align-items-center">
+                  <img
+                    src="dist/img/avatar.png"
+                    alt=""
+                    class="rounded"
+                    height="56px"
+                  />
+                  <div class="ml-3">
+                    <h3>Juan Pérez</h3>
+                    <div>
+                      <img src="dist/img/pet.png" alt="pet" />
+                      <span class="ml-1">Simba</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="d-block my-2">
+                <div class="avatar-search d-flex align-items-center">
+                  <img
+                    src="dist/img/avatar.png"
+                    alt=""
+                    class="rounded"
+                    height="56px"
+                  />
+                  <div class="ml-3">
+                    <h3>Juan Pérez</h3>
+                    <div>
+                      <img src="dist/img/pet.png" alt="pet" />
+                      <span class="ml-1">Simba</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="d-block my-2">
+                <div class="avatar-search d-flex align-items-center">
+                  <img
+                    src="dist/img/avatar.png"
+                    alt=""
+                    class="rounded"
+                    height="56px"
+                  />
+                  <div class="ml-3">
+                    <h3>Juan Pérez</h3>
+                    <div>
+                      <img src="dist/img/pet.png" alt="pet" />
+                      <span class="ml-1">Simba</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p>Pacientes</p>
+              <a href="#" class="d-block my-2">
+                <div class="avatar-search d-flex align-items-center">
+                  <img
+                    src="dist/img/Foto.png"
+                    alt=""
+                    class="rounded"
+                    height="56px"
+                  />
+                  <div class="ml-3">
+                    <h3>Simba</h3>
+                    <div>
+                      <img src="dist/img/icons/frame.svg" alt="pet" />
+                      <span class="ml-1">Juan Pérez</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="filters d-flex align-items-center mt-2">
-          <p>Filtros:</p>
-          <ul class="ks-cboxtags">
-            <li>
-              <input
-                  type="checkbox"
-                  id="checkboxOne"
-                  value="Pacientes"
-                  checked
-              /><label for="checkboxOne">Pacientes</label>
-            </li>
-            <li>
-              <input
-                  type="checkbox"
-                  id="checkboxTwo"
-                  value="Clientes"
-              /><label for="checkboxTwo">Clientes </label>
-            </li>
-            <li>
-              <input
-                  type="checkbox"
-                  id="checkboxThree"
-                  value="Productos"
-              /><label for="checkboxThree">Productos</label>
-            </li>
-          </ul>
-        </div>
-        <div class="search-items">
-          <p>Clientes</p>
-          <a href="#" class="d-block my-2">
-            <div class="avatar-search d-flex align-items-center">
-              <img
-                  src="dist/img/avatar.png"
-                  alt=""
-                  class="rounded"
-                  height="56px"
-              />
-              <div class="ml-3">
-                <h3>Juan Pérez</h3>
-                <div>
-                  <img src="dist/img/pet.png" alt="pet"/>
-                  <span class="ml-1">Simba</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="d-block my-2">
-            <div class="avatar-search d-flex align-items-center">
-              <img
-                  src="dist/img/avatar.png"
-                  alt=""
-                  class="rounded"
-                  height="56px"
-              />
-              <div class="ml-3">
-                <h3>Juan Pérez</h3>
-                <div>
-                  <img src="dist/img/pet.png" alt="pet"/>
-                  <span class="ml-1">Simba</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="d-block my-2">
-            <div class="avatar-search d-flex align-items-center">
-              <img
-                  src="dist/img/avatar.png"
-                  alt=""
-                  class="rounded"
-                  height="56px"
-              />
-              <div class="ml-3">
-                <h3>Juan Pérez</h3>
-                <div>
-                  <img src="dist/img/pet.png" alt="pet"/>
-                  <span class="ml-1">Simba</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="d-block my-2">
-            <div class="avatar-search d-flex align-items-center">
-              <img
-                  src="dist/img/avatar.png"
-                  alt=""
-                  class="rounded"
-                  height="56px"
-              />
-              <div class="ml-3">
-                <h3>Juan Pérez</h3>
-                <div>
-                  <img src="dist/img/pet.png" alt="pet"/>
-                  <span class="ml-1">Simba</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <p>Pacientes</p>
-          <a href="#" class="d-block my-2">
-            <div class="avatar-search d-flex align-items-center">
-              <img
-                  src="dist/img/Foto.png"
-                  alt=""
-                  class="rounded"
-                  height="56px"
-              />
-              <div class="ml-3">
-                <h3>Simba</h3>
-                <div>
-                  <img src="dist/img/icons/frame.svg" alt="pet"/>
-                  <span class="ml-1">Juan Pérez</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+        <!-- /.modal-content -->
       </div>
+      <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
-<!-- REQUIRED SCRIPTS -->
+    <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<!-- script src="dist/js/jqueti1.9.js"></!-->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- script src="dist/js/jqueti1.9.js"></!-->
 
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<script src="dist/js/owl.carousel.min.js"></script>
-<!-- Page specific script -->
-<script>
-    $(function () {
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="dist/js/owl.carousel.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
         /* BOOTSTRAP SLIDER */
         $(".slider").bootstrapSlider();
-    });
-    $(document).ready(function () {
+      });
+      $(document).ready(function () {
         $("#owl-demo").owlCarousel({
-            pagination: false,
-            navigation: false,
-            navigationText: ["<", ">"],
-            items: 5,
-            itemsDesktop: [1080, 4],
-            itemsDesktopSmall: [900, 3],
-            itemsTablet: [600, 2],
+          pagination: false,
+          navigation: false,
+          navigationText: ["<", ">"],
+          items: 5,
+          itemsDesktop: [1080, 4],
+          itemsDesktopSmall: [900, 3],
+          itemsTablet: [600, 2],
         });
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>

@@ -59,7 +59,36 @@
 .bg-theme-secondary {
   background: #e6f2f8 !important;
 }
-
+/*
+  Marcas calendario
+*/
+.marck-calendar-content {
+  width: 300px;
+}
+.marck-calendar {
+  display: flex;
+  width: 65px;
+  height: 72px;
+  padding: 12px 8px;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: var(--estados-positive, #009d6e);
+  box-shadow: 0px 8.16667px 11.66667px 0px rgba(72, 99, 105, 0.18);
+}
+.marck-red {
+  background: #ee5353 !important;
+  flex-basis: 84px;
+}
+.marck-ping {
+  background: #f368e0 !important;
+  flex-basis: 84px;
+}
+.fl-bas-50 {
+  flex-basis: 80px !important;
+}
 /*
     Header classes
 */
@@ -101,7 +130,11 @@ h4 {
   background: var(--secundario-default);
   color: black;
 }
-
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background: var(--secundario-default);
+}
 .badge-grey {
   background: #f2f4f6;
   color: #b5bdc9;
