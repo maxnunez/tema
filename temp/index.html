@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="dist/css/app.css" />
     <link rel="stylesheet" href="dist/css/iconSax.css" />
+    <link rel="stylesheet" href="dist/css/slider.css" />
   </head>
   <body class="hold-transition sidebar-mini layout-fixed scroll4">
     <div class="wrapper">
@@ -227,37 +228,37 @@
               <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
 
-              <li class="nav-item">
-                <a href="#" class="nav-link home-sidebar active">
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link menu__link">
                   <i class="isax isax-home-14"></i>
                   <p>Inicio</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link menu__link">
                   <i class="isax isax-hospital"></i>
                   <p>Clinica</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link menu__link">
                   <i class="isax isax-scissor-1"></i>
                   <p>Peluqueria</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link menu__link">
                   <i class="isax isax-shopping-bag"></i>
                   <p>Petshop</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navbar__item">
                 <a href="#" class="nav-link">
                   <i class="isax isax-clock"></i>
                   <p>Horario</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navbar__item">
                 <a href="#" class="nav-link">
                   <i class="isax isax-task-square"></i>
                   <p>
@@ -266,13 +267,13 @@
                   </p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navbar__item">
                 <a href="#" class="nav-link">
                   <i class="isax isax-box"></i>
                   <p>Productos</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navbar__item">
                 <a href="#" class="nav-link">
                   <i class="isax isax-volume-high4"></i>
                   <p>Campañas</p>
@@ -996,6 +997,7 @@
     <script src="dist/js/adminlte.min.js"></script>
     <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <script src="dist/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Page specific script -->
     <script>
       $(function () {
@@ -1013,6 +1015,8 @@
           itemsTablet: [600, 2],
         });
       });
+
+      feather.replace();
     </script>
   </body>
 </html>

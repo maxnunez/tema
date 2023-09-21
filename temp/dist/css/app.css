@@ -127,7 +127,7 @@ h4 {
 }
 
 .sidebar-white .nav-link:not(.active):hover {
-  background: var(--secundario-default);
+  background: transparent;
   color: black;
 }
 .nav-pills .nav-link.active,
