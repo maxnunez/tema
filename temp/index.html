@@ -208,12 +208,20 @@
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-white elevation-4">
         <!-- Brand Logo -->
-        <img
-          src="dist/img/logo/logo-uni.svg"
-          alt="AdminLTE Logo"
-          class="brand-image logo-new"
-          style="opacity: 0.8"
-        />
+        <div class="my-3">
+          <button
+            id="file-logo"
+            class="d-flex flex-column justify-content-center p-3 mx-auto btn-file-logo"
+          >
+            <i
+              class="isax isax-gallery-edit5 mx-auto"
+              style="font-size: 50px"
+            ></i>
+            Inserta tu logo
+          </button>
+
+          <input id="input-logo" type="file" name="logo" hidden />
+        </div>
 
         <!-- Sidebar -->
         <div class="sidebar">
