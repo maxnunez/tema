@@ -21,6 +21,9 @@
   --font-inter: "Inter", sans-serif;
 }
 
+.content {
+  padding-left: 17px !important;
+}
 .text-secondary-theme {
   color: var(--secondary-dark, #312e80) !important;
 }
